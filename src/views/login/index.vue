@@ -47,7 +47,6 @@
     name: 'login',
     data(){
       const validateUsername = (rule, value, callback) => {
-        console.log(rule, value);
         if (!isvalidUsername(value)) {
           callback(new Error('请输入正确的用户名'))
         } else {
